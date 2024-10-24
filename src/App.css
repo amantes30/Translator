@@ -2,6 +2,7 @@
   text-align: center;
   min-height: 100dvh;
   font-size: 20px;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -47,16 +48,27 @@ main form select {
   font-size: 1em;
   padding: 10px;
   border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #b1f1ff;
+  box-shadow: 0 0 10px #b1f1ff;
+}
+option {
+  background-color: #282c34;
+  color: white;
 }
 main form textarea {
   width: 90%;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #b1f1ff;
+  color: white;
   border-radius: 10px;
   max-width: 500px;
   text-align: center;
+  background-color: transparent;
   font-size: 1em;
+  box-shadow: 0 0 10px #b1f1ff;
 }
 main form button {
   padding: 10px;
@@ -89,8 +101,19 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: white;
 }
-
+::-webkit-scrollbar-track {
+  background-color: #282c34;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b1f1ff;
+  border-radius: 10px;
+  color: #b1f1ff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
