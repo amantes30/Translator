@@ -151,11 +151,13 @@ async function handleClick(e) {
   e.target.disabled = true;
   e.preventDefault();
   e.target.innerHTML = "Translating...";
+  e.target.classList.add("loading");
   const inputTxt = document.getElementById("input-txt");
   const language = document.getElementById("language").value;
   await Translate(inputTxt.value, language).then(() => {
     e.target.innerHTML = "Translate";
     e.target.disabled = false;
+    e.target.classList.remove("loading");
   });
 }
 async function Translate(text, language) {
@@ -172,7 +174,9 @@ async function Translate(text, language) {
     If the text is already in French, just return the same text. Do not translate it or do not explain about it.`;
     const result = await model.generateContent(prompt);
     outputTxt.innerHTML = result.response.text();
+    
   } catch (e) {
-    console.error(e);
+    
+    alert(e);
   }
 }

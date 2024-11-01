@@ -74,10 +74,21 @@ main form button {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  background-color: #282c34;
   color: white;
   font-size: 1em;
   cursor: pointer;
+  width: 80%;
+  max-width: 350px;
+  background: linear-gradient(45deg, #e6e7ed, #c4cbff, #ffffff);
+}
+main form button.loading {
+  animation: sizeAnimation 350ms forwards;
+}
+@keyframes sizeAnimation {
+  
+  100% {
+    width: 10%;
+  }
 }
 #output-txt {
   width: 80%;
@@ -87,8 +98,8 @@ main form button:hover {
   color: black;
 }
 main form button:disabled {
-  background-color: grey;
-  color: white;
+  
+  color: grey;
 }
 
 footer {
