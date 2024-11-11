@@ -177,6 +177,6 @@ async function Translate(text, language) {
     
   } catch (e) {
     
-    alert(e);
+    alert(e.message);
   }
 }
