@@ -141,7 +141,7 @@ function App() {
           <button onClick={handleClick}>Translate</button>
         </form>
       </main>
-      <footer>Powered By <img style={{height: '100%'}} src="https://git.amantes30.com/SVG/gemini.svg"></img></footer>
+      <footer>Powered By <img style={{height: '100%'}} src="https://amantes30.github.io/icons/SVG/gemini.svg"></img></footer>
     </div>
   );
 }
